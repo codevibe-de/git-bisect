@@ -40,3 +40,7 @@ def calculate_median(numbers):
     if n % 2 == 0:
         return (sorted_numbers[mid - 1] + sorted_numbers[mid]) / 2
     return sorted_numbers[mid]
+
+
+def calculate_range(numbers):
+    return find_max(numbers) - find_min(numbers)

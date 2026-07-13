@@ -53,3 +53,7 @@ def is_empty(numbers):
 def calculate_variance(numbers):
     avg = calculate_average(numbers)
     return calculate_sum([(n - avg) ** 2 for n in numbers]) / count(numbers)
+
+
+def calculate_std_dev(numbers):
+    return calculate_variance(numbers) ** 0.5

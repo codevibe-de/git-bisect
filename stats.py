@@ -26,3 +26,7 @@ def find_max(numbers):
         if n > result:
             result = n
     return result
+
+
+def count(numbers):
+    return len(numbers)

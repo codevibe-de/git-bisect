@@ -100,3 +100,8 @@ def pretty_print(numbers):
     print(f"Mode    : {calculate_mode(numbers)}")
     print(f"Range   : {calculate_range(numbers)}")
     print(f"Std Dev : {calculate_std_dev(numbers):.4f}")
+
+
+if __name__ == "__main__":
+    sample = [4, 8, 15, 16, 23, 42]
+    pretty_print(sample)

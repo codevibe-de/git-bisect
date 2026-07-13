@@ -87,6 +87,21 @@ Vergiss nicht, die Bisect-Sitzung abzuschließen, bevor du weitermachst:
 git bisect reset
 ```
 
+## Bonus: Datensätze aus einem Git Submodul
+
+Füge das Repository https://github.com/codevibe-de/datasets als Submodul hinzu,
+z.B. unter dem Pfad "data"
+
+Das vorhandene Skript `run_dataset.py` lädt einen Datensatz und gibt die Statistiken aus,
+wobei der Code aus `stats.py` verwendet wird.
+
+```bash
+python3 run_dataset.py data/fibonacci.csv
+python3 run_dataset.py data/float_values.csv
+python3 run_dataset.py data/negative_values.csv
+python3 run_dataset.py data/empty.csv
+```
+
 ## Lernziele
 
 Nach dieser Übung solltest du verstehen:

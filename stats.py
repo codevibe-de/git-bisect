@@ -87,3 +87,16 @@ def sorted_asc(numbers):
 
 def sorted_desc(numbers):
     return sorted(numbers, reverse=True)
+
+
+def pretty_print(numbers):
+    print(f"Numbers : {numbers}")
+    print(f"Count   : {count(numbers)}")
+    print(f"Sum     : {calculate_sum(numbers)}")
+    print(f"Average : {calculate_average(numbers)}")
+    print(f"Min     : {find_min(numbers)}")
+    print(f"Max     : {find_max(numbers)}")
+    print(f"Median  : {calculate_median(numbers)}")
+    print(f"Mode    : {calculate_mode(numbers)}")
+    print(f"Range   : {calculate_range(numbers)}")
+    print(f"Std Dev : {calculate_std_dev(numbers):.4f}")

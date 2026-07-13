@@ -65,3 +65,10 @@ def filter_above(numbers, threshold):
 
 def filter_below(numbers, threshold):
     return [n for n in numbers if n < threshold]
+
+
+def normalize(numbers):
+    lo = find_min(numbers)
+    hi = find_max(numbers)
+    spread = hi - lo
+    return [(n - lo) / spread for n in numbers]

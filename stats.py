@@ -61,3 +61,7 @@ def calculate_std_dev(numbers):
 
 def filter_above(numbers, threshold):
     return [n for n in numbers if n > threshold]
+
+
+def filter_below(numbers, threshold):
+    return [n for n in numbers if n < threshold]

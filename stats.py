@@ -48,3 +48,8 @@ def calculate_range(numbers):
 
 def is_empty(numbers):
     return len(numbers) == 0
+
+
+def calculate_variance(numbers):
+    avg = calculate_average(numbers)
+    return calculate_sum([(n - avg) ** 2 for n in numbers]) / count(numbers)

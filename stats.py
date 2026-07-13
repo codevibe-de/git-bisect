@@ -6,3 +6,7 @@ def calculate_sum(numbers):
     for n in numbers:
         total += n
     return total
+
+
+def calculate_average(numbers):
+    return calculate_sum(numbers) / len(numbers)

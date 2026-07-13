@@ -79,3 +79,7 @@ def calculate_mode(numbers):
     for n in numbers:
         frequency[n] = frequency.get(n, 0) + 1
     return max(frequency, key=frequency.get)
+
+
+def sorted_asc(numbers):
+    return sorted(numbers)

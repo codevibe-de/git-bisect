@@ -72,3 +72,10 @@ def normalize(numbers):
     hi = find_max(numbers)
     spread = hi - lo
     return [(n - lo) / spread for n in numbers]
+
+
+def calculate_mode(numbers):
+    frequency = {}
+    for n in numbers:
+        frequency[n] = frequency.get(n, 0) + 1
+    return max(frequency, key=frequency.get)

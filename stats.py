@@ -31,3 +31,12 @@ def find_max(numbers):
 
 def count(numbers):
     return len(numbers)
+
+
+def calculate_median(numbers):
+    sorted_numbers = sorted(numbers)
+    n = len(sorted_numbers)
+    mid = n // 2
+    if n % 2 == 0:
+        return (sorted_numbers[mid - 1] + sorted_numbers[mid]) / 2
+    return sorted_numbers[mid]

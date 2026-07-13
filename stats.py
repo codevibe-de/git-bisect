@@ -44,3 +44,7 @@ def calculate_median(numbers):
 
 def calculate_range(numbers):
     return find_max(numbers) - find_min(numbers)
+
+
+def is_empty(numbers):
+    return len(numbers) == 0

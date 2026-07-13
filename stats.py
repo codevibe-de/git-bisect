@@ -57,3 +57,7 @@ def calculate_variance(numbers):
 
 def calculate_std_dev(numbers):
     return calculate_variance(numbers) ** 0.5
+
+
+def filter_above(numbers, threshold):
+    return [n for n in numbers if n > threshold]

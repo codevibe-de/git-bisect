@@ -83,3 +83,7 @@ def calculate_mode(numbers):
 
 def sorted_asc(numbers):
     return sorted(numbers)
+
+
+def sorted_desc(numbers):
+    return sorted(numbers, reverse=True)

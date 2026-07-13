@@ -18,3 +18,11 @@ def find_min(numbers):
         if n < result:
             result = n
     return result
+
+
+def find_max(numbers):
+    result = numbers[0]
+    for n in numbers[1:]:
+        if n > result:
+            result = n
+    return result

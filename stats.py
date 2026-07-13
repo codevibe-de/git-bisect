@@ -10,3 +10,11 @@ def calculate_sum(numbers):
 
 def calculate_average(numbers):
     return calculate_sum(numbers) / len(numbers)
+
+
+def find_min(numbers):
+    result = numbers[0]
+    for n in numbers[1:]:
+        if n < result:
+            result = n
+    return result

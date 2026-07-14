@@ -67,6 +67,13 @@ def filter_below(numbers, threshold):
     return [n for n in numbers if n < threshold]
 
 
+def normalize(numbers):
+    lo = find_min(numbers)
+    hi = find_max(numbers)
+    spread = hi - lo
+    return [(n - lo) / spread for n in numbers]
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -80,3 +87,4 @@ if __name__ == "__main__":
     print(f"Std Dev : {calculate_std_dev(data):.4f}")
     print(f"Above 10: {filter_above(data, 10)}")
     print(f"Below 10: {filter_below(data, 10)}")
+    print(f"Norm.   : {[round(x, 2) for x in normalize(data)]}")

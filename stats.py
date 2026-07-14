@@ -74,6 +74,13 @@ def normalize(numbers):
     return [(n - lo) / spread for n in numbers]
 
 
+def calculate_mode(numbers):
+    frequency = {}
+    for n in numbers:
+        frequency[n] = frequency.get(n, 0) + 1
+    return max(frequency, key=frequency.get)
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -82,6 +89,7 @@ if __name__ == "__main__":
     print(f"Min     : {find_min(data)}")
     print(f"Max     : {find_max(data)}")
     print(f"Median  : {calculate_median(data)}")
+    print(f"Mode    : {calculate_mode(data)}")
     print(f"Range   : {calculate_range(data)}")
     print(f"Variance: {calculate_variance(data):.4f}")
     print(f"Std Dev : {calculate_std_dev(data):.4f}")

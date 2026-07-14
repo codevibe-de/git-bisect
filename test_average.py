@@ -4,7 +4,7 @@ Bisect test script — exits 1 (bad) if the average bug is present, 0 (good) oth
 Usage with git bisect:
     git bisect start
     git bisect bad                  # current HEAD is broken
-    git bisect good 430cb66         # first commit (before calculate_average existed)
+    git bisect good 41d75e2         # first commit (before calculate_average existed)
     git bisect run python test_average.py
 """
 

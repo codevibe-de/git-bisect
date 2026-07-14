@@ -59,6 +59,10 @@ def calculate_std_dev(numbers):
     return calculate_variance(numbers) ** 0.5
 
 
+def filter_above(numbers, threshold):
+    return [n for n in numbers if n > threshold]
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -70,3 +74,4 @@ if __name__ == "__main__":
     print(f"Range   : {calculate_range(data)}")
     print(f"Variance: {calculate_variance(data):.4f}")
     print(f"Std Dev : {calculate_std_dev(data):.4f}")
+    print(f"Above 10: {filter_above(data, 10)}")

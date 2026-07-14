@@ -55,6 +55,10 @@ def calculate_variance(numbers):
     return calculate_sum([(n - avg) ** 2 for n in numbers]) / count(numbers)
 
 
+def calculate_std_dev(numbers):
+    return calculate_variance(numbers) ** 0.5
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -65,3 +69,4 @@ if __name__ == "__main__":
     print(f"Median  : {calculate_median(data)}")
     print(f"Range   : {calculate_range(data)}")
     print(f"Variance: {calculate_variance(data):.4f}")
+    print(f"Std Dev : {calculate_std_dev(data):.4f}")

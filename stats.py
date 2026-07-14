@@ -33,6 +33,15 @@ def count(numbers):
     return len(numbers)
 
 
+def calculate_median(numbers):
+    sorted_numbers = sorted(numbers)
+    n = len(sorted_numbers)
+    mid = n // 2
+    if n % 2 == 0:
+        return (sorted_numbers[mid - 1] + sorted_numbers[mid]) / 2
+    return sorted_numbers[mid]
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -40,3 +49,4 @@ if __name__ == "__main__":
     print(f"Average : {calculate_average(data)}")
     print(f"Min     : {find_min(data)}")
     print(f"Max     : {find_max(data)}")
+    print(f"Median  : {calculate_median(data)}")

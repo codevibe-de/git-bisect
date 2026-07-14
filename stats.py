@@ -42,6 +42,10 @@ def calculate_median(numbers):
     return sorted_numbers[mid]
 
 
+def calculate_range(numbers):
+    return find_max(numbers) - find_min(numbers)
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -50,3 +54,4 @@ if __name__ == "__main__":
     print(f"Min     : {find_min(data)}")
     print(f"Max     : {find_max(data)}")
     print(f"Median  : {calculate_median(data)}")
+    print(f"Range   : {calculate_range(data)}")

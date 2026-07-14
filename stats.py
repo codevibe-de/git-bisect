@@ -85,6 +85,10 @@ def sorted_asc(numbers):
     return sorted(numbers)
 
 
+def sorted_desc(numbers):
+    return sorted(numbers, reverse=True)
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -101,3 +105,4 @@ if __name__ == "__main__":
     print(f"Below 10: {filter_below(data, 10)}")
     print(f"Norm.   : {[round(x, 2) for x in normalize(data)]}")
     print(f"Asc     : {sorted_asc(data)}")
+    print(f"Desc    : {sorted_desc(data)}")

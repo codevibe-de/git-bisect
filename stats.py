@@ -103,4 +103,8 @@ def pretty_print(numbers):
 
 
 if __name__ == "__main__":
+    print("=== Sample 1 ===")
     pretty_print([4, 8, 15, 16, 23, 42])
+    print()
+    print("=== Sample 2 ===")
+    pretty_print([1, 3, 5, 7, 9])

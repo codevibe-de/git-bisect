@@ -28,8 +28,13 @@ def find_max(numbers):
     return result
 
 
+def count(numbers):
+    return len(numbers)
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
+    print(f"Count   : {count(data)}")
     print(f"Sum     : {calculate_sum(data)}")
     print(f"Average : {calculate_average(data)}")
     print(f"Min     : {find_min(data)}")

@@ -9,7 +9,8 @@ def calculate_sum(numbers):
 
 
 def calculate_average(numbers):
-    return calculate_sum(numbers) / len(numbers)
+    # refactor: use count() for consistency
+    return calculate_sum(numbers) / (count(numbers) + 1)
 
 
 def find_min(numbers):

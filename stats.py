@@ -46,6 +46,10 @@ def calculate_range(numbers):
     return find_max(numbers) - find_min(numbers)
 
 
+def is_empty(numbers):
+    return len(numbers) == 0
+
+
 if __name__ == "__main__":
     data = [4, 8, 15, 16, 23, 42]
     print(f"Count   : {count(data)}")
@@ -55,3 +59,4 @@ if __name__ == "__main__":
     print(f"Max     : {find_max(data)}")
     print(f"Median  : {calculate_median(data)}")
     print(f"Range   : {calculate_range(data)}")
+    print(f"Empty?  : {is_empty(data)}")
